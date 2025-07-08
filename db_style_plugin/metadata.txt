@@ -1,0 +1,7 @@
+name=Apply DB Layer Style
+description=Apply styles from the PostGIS layer_styles table
+version=1.0
+qgisMinimumVersion=3.10
+author=Gokul Gopan
+email=your_email@example.com
+category=Style
