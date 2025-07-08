@@ -27,3 +27,21 @@ Ensure your PostGIS database contains a `layer_styles` table in the **public sch
 ## ✍️ Author
 **Gokul Gopan**  
 📧 gokul.gopan@plan4better.de
+
+## 🔐 Database Configuration
+
+The plugin connects to your PostGIS database using the credentials hardcoded in `apply_style.py`.
+
+To make the plugin work:
+- Open `apply_style.py`
+- Locate the `fetch_styles()` method
+- Replace the following values with your actual database info:
+
+```python
+conn = psycopg2.connect(
+    dbname='your_database_name',
+    user='your_username',
+    password='your_password',
+    host='your_host',
+    port='5432'
+)
